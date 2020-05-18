@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ps07.master.cs" Inherits="PS07_Edito.ps07" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder>
+    </title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div></div><br />
+    <img class="logo" src="images/PicsArt_10-13-05.24.06.jpg" />
+    <br /><br />
+    <div class="head">
+        <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    </div> <br />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="menu">
+               <ul>
+                   <li><a href="home.aspx">Home</a></li>
+                   <li><a href="#">Categories</a>
+                       <ul>
+                           <li><a href="video.aspx">Videos</a></li>
+                           <li><a href="#">Photoes</a>
+                               <ul>
+                                   <li><a href="wedding.aspx">Wedding </a></li>
+                                   <li><a href="candid.aspx">Candid </a></li>
+                                   <li><a href="baby.aspx">Baby </a></li>
+                                   <li><a href="corporate.aspx">Corporate Events</a></li>
+                                   <li><a href="outdoor.aspx">Outdoor </a></li>
+                               </ul>
+                           </li>                           
+                       </ul>
+                   </li>
+                   <li><a href="gallery.aspx">Gallery</a></li>
+                   <li><a href="contact.aspx">Contact</a></li>
+                   <li><a href="about.aspx">About us</a></li>
+               </ul>
+
+            <asp:ContentPlaceHolder ID="Contentbody" runat="server">
+                
+            </asp:ContentPlaceHolder>
+
+            <div class="foot">
+               
+                <table class="auto-style1">
+                    <tr>
+                        <td>&nbsp; Quick Link</td>
+                        <td>&nbsp; Office Address</td>
+                        <td>&nbsp; Our Service</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp
+                            <a href="home.aspx">Home</a><br />
+                            <a href="gallery.aspx">Gallery</a><br />
+                            <a href="contact.aspx">Contact</a><br />
+                            <a href="about.aspx">About us</a><br />
+                        </td>
+                        <td style="font-size:20px; font-weight:normal; line-height:30px;">&nbsp; 
+                            10/18, TMS Kattuvalavu,<br />
+                            Chinnathanda(po),<br />
+                            Mettur(Tk),<br />
+                            Salem(Dt)-636303<br />
+                            Mob-No : 9655964285
+                        </td>
+                        <td>&nbsp;<br />
+                            <a href="wedding.aspx">Wedding Photography</a><br />
+                            <a href="baby.aspx">Baby Shower</a><br />
+                            <a href="corporate.aspx">Corporate Events</a><br />
+                            <a href="candid.aspx">Candid Photography</a><br />
+                            <a href="outdoor.aspx">Outdoor Photography</a><br />
+                            <a href="video.aspx">Videography</a><br />
+                        </td>
+                    </tr>
+                </table>
+               
+            </div>
+        </form>
+</body>
+</html>
